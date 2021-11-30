@@ -1,3 +1,10 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+h1,h2,h3,p{
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
 .sidebar {
   height: 100%;
   width: 160px;
@@ -26,17 +33,80 @@
 
 /* Style the main content */
 .main {
+  background-color: black;
   margin-left: 160px; /* Same as the width of the sidenav */
   padding: 0px 10px;
 }
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {padding-top: 10px;}
+  .sidebar a {font-size: 10px;}
 }
 
 #footer{
   position: fixed;
   bottom: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/estudiantes.jpg);
+
+  /* Full height */
+  height: 70%;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.inline-block{
+  display: inline-block;
+  padding: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+figure{
+  /*border: 1px #cccccc solid;*/
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: #003473;
+  color: white;
+  
+  padding: 2px;
+  text-align: center;
+}
+
+#footer {
+  padding-top: 0px;
+  width: 100%;
+  height: auto;
+  background: rgb(46, 43, 43);
+  text-align: center;
+  color: azure;
 }
